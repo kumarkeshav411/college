@@ -43,60 +43,60 @@ input[type=reset]
 					<tbody>
  <tr>
  <th colspan="2">
- <h3 align="center" >Registration Form</h3>
-</th>
+  <div class="form-group"><h3 align="center" ><label>Registration Form</label></h3></div>
+</th> 
 </tr>
 
-<tr>
-	<td  colspan="2">Field with ' * ' is mandatory</td>
+<tr> <div class="form-group">
+	<td  colspan="2"><label>Field with ' * ' is mandatory</label></td> </div>
 </tr>
 
-<tr>
-	<td>*Student name </td>
+<tr> <div class="form-group">
+	<td><label>*Student name </label></td>
 	<td> <input type="text" name="sname" placeholder="Enter Your Name" class="form-control" required> </td>
-
+     </div>
 </tr>
 
-<tr>
-	<td>*Father's name</td>
+<tr> <div class="form-group">
+	<td><label>*Father's name</label></td>
 	<td> <input type="text" name="fname"  placeholder="Enter Your Father's Name" class="form-control" required>  </td>
-
+</div>
 </tr>
 
-<tr>
-	<td>*Mother's name</td>
+<tr> <div class="form-group">
+	<td><label>*Mother's name</label></td>
 	<td> <input type="text" name="mname" placeholder="Enter Your Mother's Name" class="form-control" required> </td>
-
+</div>
 </tr>
 
 
-<tr>
-	<td>*Date of Birth</td>
+<tr> <div class="form-group">
+	<td><label>*Date of Birth</label></td>
 	<td> <input type="Date" name="dobname" placeholder="D.O.B" class="form-control" required> </td>
-
+</div>
 </tr>
 
 
-<tr>
-	<td>*Mobile Number</td>
+<tr> <div class="form-group">
+	<td><label>*Mobile Number</label></td>
 	<td> <input type="Number" name="mobnum" placeholder="+91 Number" class="form-control" required> </td>
-
+</div>
 </tr>
 
 
-<tr>
-	<td>Email</td>
+<tr> <div class="form-group">
+	<td><label>Email</label></td>
 	<td> <input type="text" name="email" placeholder="hostname@domain" class="form-control"> </td>
-
+</div>
 </tr>
-<tr>
-	<td>*Address</td>
+<tr>  <div class="form-group">
+	<td><label>*Address</label></td>
 	<td> <textarea name="addr" rows="5" cols="30" placeholder="Please Enter Your Full Address" class="form-control" required></textarea> </td>
-
+</div>
 </tr>
 
-<tr>
-	<td>*Gender</td>
+<tr> <div class="form-group">
+	<td><label>*Gender</label></td>
 	<td>
 		 <select name="gender" class="form-control" required>
     <option value="gender">male</option>
@@ -105,43 +105,46 @@ input[type=reset]
    
   </select>
 	</td>
-
+</div>
 </tr>
 
-<tr>
-	<td>*Select Course</td>
+<tr>  <div class="form-group">
+	<td><label>*Select Course</label></td>
 	<td > <input type="radio"name="course" > BCA
 	 <input type="radio"name="course"> BBA
 	 <input type="radio"name="course"> B.tech </td>
+	 </div>
 </tr>
 
-<tr>
-	<td>Select Hobbies</td>
+<tr> <div class="form-group">
+	<td><label>Select Hobbies</label></td>
 	<td><input type="checkbox"  name="coding" class="checkbox">Coding <input type="checkbox"  name="dance" class="checkbox">Dance
 	<input type="checkbox"  name="singing" class="checkbox">Singing </td>
-
+</div>
 </tr>
 
 
-<tr>
-	<td>*Upload Photo</td>
+<tr> <div class="form-group">
+	<td><label>*Upload Photo</label></td>
 	<td> <input type="file" name="photo" class="form-control" required> </td>	
-
+</div>
 </tr>
 
-<tr>
+<tr> <div class="form-group">
 	<td  colspan="2">
-	<input type="checkbox"  name="declare" >*I confirm that above filled info are true 
+	<input type="checkbox"  name="declare" ><label>*I confirm that above filled info are true</label> 
 </td>
+</div>
 </tr>
 
 <tr>
+	 <div class="form-group">
 	<td  colspan="2" ><input type="submit" name="submitbtn" value="Register" class="btn btn-success">
 		
 		<input type="reset"  name="clrbtn" value="Clear" class="btn btn-success">
 	</td>
 	
-
+</div>
 </tr>
 					</tbody>
 				</table>
