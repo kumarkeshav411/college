@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registration Form</title>
+    
+     <script src="jsFile/indexFormValidate.js"></script>  
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+<style>
+
+table {
+  background-color: lightblue;
+}
+	
+	td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 1px;
+}
+table {
+        border: 2px thin;
+
+    }
+input[type=submit]
+{
+	border-radius: 6px; 
+}
+input[type=reset]
+{
+	border-radius: 6px;
+}
+
+</style>
+	</head>
+
+<body>
+ 		<div class="container">
+
+	
+    <form action="reg.php" method="POST" onSubmit="return validate()" class="form-verticle">
+    <div class="form-group">
+    <table border="1" align="center" height="30%" width="40%" cellspacing="0" cellpadding="2" class="table table-hover">
+ 
+					<tbody>
+ <tr>
+ <th colspan="2">
+  <div class="form-group"><h3 align="center" ><label>Registration Form</label></h3></div>
+</th> 
+</tr>
+
+<tr> <div class="form-group">
+	<td  colspan="2"><label>Field with ' * ' is mandatory</label></td> </div>
+</tr>
+
+<tr> <div class="form-group">
+	<td><label>*Student name </label></td>
+	<td> <input type="text" name="sname" id="sname" placeholder="Enter Your Name" class="form-control" onBlur="retur validate()" > </td>
+     </div>
+</tr>
+
+<tr> <div class="form-group">
+	<td><label>*Father's name</label></td>
+	<td> <input type="text" name="fname" id="fname"  placeholder="Enter Your Father's Name" class="form-control" onBlur="retur validate()" >  </td>
+</div>
+</tr>
+
+<tr> <div class="form-group">
+	<td><label>*Mother's name</label></td>
+	<td> <input type="text" name="mname" id="mname" placeholder="Enter Your Mother's Name" class="form-control" onBlur="retur validate()"> </td>
+</div>
+</tr>
+
+
+<tr> <div class="form-group">
+	<td><label>*Date of Birth</label></td>
+	<td> <input type="Date" name="dob" id="dob" placeholder="D.O.B" class="form-control" onBlur="retur validate()" > </td>
+</div>
+</tr>
+
+
+<tr> <div class="form-group">
+	<td><label>*Mobile Number</label></td>
+	<td> <input type="txt" name="mob" id="mob" placeholder="+91 Number" class="form-control" maxlength="10" onBlur="retur validate()" > </td>
+</div>
+</tr>
+
+
+<tr> <div class="form-group">
+	<td><label>Email</label></td>
+	<td> <input type="text" name="email" id="email" placeholder="hostname@domain" class="form-control" onBlur="retur validate()"> </td>
+</div>
+</tr>
+<tr>  <div class="form-group">
+	<td><label>*Address</label></td>
+	<td> <textarea name="addr" id="addr" rows="5" cols="30" placeholder="Please Enter Your Full Address" class="form-control"  ></textarea> </td>
+</div>
+</tr>
+
+<tr> <div class="form-group">
+	<td><label>Gender</label></td>
+	<td>
+		 <select name="gender" class="form-control" id="gender" >
+    <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+   
+  </select>
+	</td>
+</div>
+</tr>
+
+<tr>  <div class="form-group">
+	<td>*Select Course</td>
+	<td >
+     <input type="radio" name="course" value="BCA" id="course" onClick="check(this)" > BCA
+	 <input type="radio" name="course" value="BBA" id="course" onClick="check(this)" > BBA
+	 <input type="radio" name="course" value="BTECH" id="course" onClick="check(this)"> B.tech
+      </td>
+	 </div>
+</tr>
+
+<tr> <div class="form-group">
+	<td><label>Select Hobbies</label></td>
+	<td>
+    	<input type="checkbox" id="chkCoding"  value="Coding" class="checkbox-vertical" onClick="setData()" />Coding 
+    	<input type="checkbox"  value="dance" id="chkDance" class="checkbox-vertical" onClick="setData()" />Dance
+		<input type="checkbox"  id="chksinging" value="Singing" class="checkbox-vertical" onClick="setData()" />Singing 
+        <input type="hidden" name="cocurri" id="cocurri" value="">
+    </td>
+</div>
+</tr>
+
+
+
+<tr> <div class="form-group">
+	<td><label>*Upload Photo</label></td>
+	<td> <input type="file" name="photo" id="photo" class="form-control" accept=".jpg, .jpeg, .png"></td>	
+</div>
+</tr>
+
+<tr> <div class="form-group">
+	<td  colspan="2">
+	<input type="checkbox"  name="confirm" id="confirm" >*I confirm that above filled info are true 
+</td>
+</div>
+</tr>
+
+<tr>
+	 <div class="form-group">
+	<td  colspan="2" ><input type="submit" name="submitbtn" value="Register" class="btn btn-success">
+		
+		<input type="reset"  name="clrbtn" value="Clear" class="btn btn-danger">
+		<input type="button" align="right"  name="home" value="Go Home" class="btn btn-primary " onClick="funHome()">
+        <script>function funHome()
+  {//alert('Form Submitted Successfully.');
+  location.replace('..')
+  }</script>
+        
+        
+	</td>
+	
+</div>
+</tr>
+					</tbody>
+				</table>
+                </div>
+    </form>
+    
+    
+</body>
+</html>
